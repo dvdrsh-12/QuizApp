@@ -6,11 +6,11 @@
 }
 
 body {
-    background: #001e4d;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
 .app {
-    background: #ffffff;
+    background-image: linear-gradient(to right, #00b4db, #0083b0);
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
@@ -37,7 +37,7 @@ body {
 }
 
 .btn {
-    background: #ffffff;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     color: #222222;
     font-weight: 500;
     width: 100%;
@@ -47,6 +47,7 @@ body {
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
+    color: #ffffff;
 }
 
 .btn:hover:not([disabled]) {
