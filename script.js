@@ -105,11 +105,24 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
+const scoreThreshold = 3;
+
 function showScore() {
     restState();
-    questionElement.innerHTML = `You Scored ${score} out of ${questions.length}!`;
+    const scoreMessage = document.createElement("h2");
+    scoreMessage.innerHTML = `You scored ${score} out of ${questions.length}. `;
+
+    if (score >= scoreThreshold) {
+        scoreMessage.innerHTML += "Congratulations! You are a winner!";
+    } else {
+        scoreMessage.innerHTML += "Sorry, you didn't win this time.";
+    }
+
+    questionElement.innerHTML = "";
+    answerButtons.innerHTML = "";
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
+    answerButtons.appendChild(scoreMessage);
 }
 
 function handleNextButton() {
