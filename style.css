@@ -79,3 +79,24 @@ body {
 .incorrect {
     background: #ff9393;
 }
+
+.home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #00b4db, #0083b0);
+    color: #001e4d;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
